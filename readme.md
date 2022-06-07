@@ -27,6 +27,10 @@ A PWA app for the covid data visualization for INDIA's data statewise.
 
 [Backend/API link](https://covid-scraper-mk.herokuapp.com/) https://covid-scraper-mk.herokuapp.com/
 
+## Demo
+
+![Demo](https://covid.mayankkhanna.in/demo.gif)
+
 ## Tech stack
 
 - [React](https://reactjs.org/)
