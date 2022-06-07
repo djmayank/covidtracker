@@ -2,6 +2,11 @@
 
 A PWA app for the covid data visualization for INDIA's data statewise.
 
+#### GITHUB REPOSITORIES
+
+- Frontend - https://github.com/djmayank/coviddatascraper
+- Backend - https://github.com/djmayank/covidtracker
+
 ### Frontend
 
 - Created using react and hosted on one of my subdomains.
@@ -28,6 +33,7 @@ A PWA app for the covid data visualization for INDIA's data statewise.
 - [Node.js](https://nodejs.org/)
 - [Heroku](https://www.heroku.com/)
 
-## Authors
+## Author
 
 - [@djmayank](https://www.github.com/djmayank)
+- [Portfolio](https://mayankkhanna.in/) https://mayankkhanna.in/
