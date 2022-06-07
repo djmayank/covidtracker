@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript"> document.write("<base href='//" + document.location.host + "' />"); </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Covid tracker by Mayank">
+  <meta name="description"
+    content="Covid tracker : a tracker scraping data from mohfw website">
+  <meta name="keywords"
+    content="Mayank khanna, covid tracker, covid analyser, tracker, corona, corona data, covid statewise data">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="Mayank Khanna">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <title>Covid tracker</title>
+</head>
+
+<body style="margin: 0">
+  <div id="root"></div>
+  <script src="main.js"></script>
+  <script type="text/javascript">
+  (function e() {
+      "use strict";
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").then(function (e) {
+            console.log("ServiceWorker registration successful with scope: ", e.scope);
+            e.onupdatefound = function () {
+              var t = e.installing;
+              t.onstatechange = function () {
+                switch (t.state) {
+                  case "installed":
+                    if (navigator.serviceWorker.controller) {
+                      console.log("new update available");
+                      location.reload(true)
+                    }
+                    break;
+                  default:
+                }
+              }
+            }
+          }).catch(function (e) {
+            console.log("ServiceWorker registration failed: ", e)
+          })
+        })
+      }
+    })();
+  </script>
+</body>
+
+</html>
+

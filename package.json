@@ -1,0 +1,48 @@
+{
+  "name": "covidtracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": ".",
+  "scripts": {
+    "start": "webpack-dev-server .",
+    "build": "webpack .",
+    "prod": "NODE_ENV=production webpack --mode=production",
+    "serve": "npm run prod && serve -s dist"
+  },
+  "author": "mayank",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/runtime": "^7.17.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "workbox-webpack-plugin": "^6.5.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.17.0",
+    "@emotion/css": "^11.9.0",
+    "axios": "^0.27.2",
+    "chart.js": "^3.8.0",
+    "emotion": "^11.0.0",
+    "file-loader": "^6.2.0",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "^17.0.2",
+    "workbox-cacheable-response": "^6.5.3",
+    "workbox-core": "^6.5.3",
+    "workbox-expiration": "^6.5.3",
+    "workbox-precaching": "^6.5.3",
+    "workbox-routing": "^6.5.3",
+    "workbox-strategies": "^6.5.3",
+    "workbox-window": "^6.5.3"
+  }
+}
