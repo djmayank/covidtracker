@@ -31,6 +31,12 @@ A PWA app for the covid data visualization for INDIA's data statewise.
 
 ![Demo](https://covid.mayankkhanna.in/demo.gif)
 
+## Steps to run this repository
+
+- `yarn install` to install the packages
+- `yarn start` to start the build
+- `yarn build` to create the build in public folder
+
 ## Tech stack
 
 - [React](https://reactjs.org/)
